@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My WebOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Welcome Screen (Part 1) -->
+    <div id="welcome-screen" class="screen">
+        <div class="welcome-card">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Profile Avatar" class="avatar">
+            <h1>WelcomeOS</h1>
+            <p>A feature-limited OS to explore who I am, what I build, and what I love.</p>
+            <button id="enter-btn">Enter OS</button>
+        </div>
+    </div>
+
+    <!-- OS Desktop (Part 2 & 3) -->
+    <div id="desktop-screen" class="screen hidden">
+        
+        <!-- Top Menu Bar (Part 2) -->
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <span class="os-name">MyOS</span>
+                <span class="status-badge">✨ Always Learning</span>
+            </div>
+            <div class="top-bar-right">
+                <span id="live-clock">00:00:00</span>
+            </div>
+        </div>
+
+        <!-- Desktop Area & Icons (Part 2 & 5) -->
+        <div class="desktop-grid">
+            <div class="desktop-icon" data-app="notes">
+                <div class="icon-img">�</ div>
+                <span>Notes</span>
+            </div>
+            <div class="desktop-icon" data-app="projects">
+                <div class="icon-img">�</ div>
+                <span>Projects</span>
+            </div>
+            <div class="desktop-icon" data-app="calculator">
+                <div class="icon-img">�</ div>
+                <span>Calculator</span>
+            </div>
+        </div>
+
+        <!-- Interactive App Window (Part 3, 4, & 5) -->
+        <div id="app-window" class="window hidden">
+            <div class="window-header">
+                <span id="window-title">App Title</span>
+                <div class="window-controls">
+                    <button class="close-btn">&times;</button>
+                </div>
+            </div>
+            <div class="window-body" id="window-content">
+                <!-- App content will load here -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
